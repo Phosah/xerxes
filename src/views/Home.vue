@@ -1,5 +1,6 @@
 <template>
   <main>
+    <Header />
     <div class="mb-8">
       <BorrowLimit />
     </div>
@@ -27,6 +28,7 @@ import ConnectWalletButton from "../components/ConnectWalletButton.vue"
 import AllMarketsTable from "../components/AllMarketsTable.vue"
 import MarketAndSupplyTab from "../components/MarketAndSupplyTab.vue"
 import BorrowLimit from "../components/BorrowLimit.vue"
+import Header from "../components/Header.vue"
 
 export default {
   name: "Home",
@@ -37,7 +39,8 @@ export default {
     ConnectWalletButton,
     AllMarketsTable,
     MarketAndSupplyTab,
-    BorrowLimit
+    BorrowLimit,
+    Header
   }
 }
 </script>

@@ -2,10 +2,10 @@
     <nav class="flex items-center space-x-4 h-20">
         <div class="flex-1 flex items-center space-x-2">
             <img src="@/assets/xerxes-logo.png" alt="Xerxes logo" />
-            <p>XERXES</p>
+            <p class="text-xl">XERXES</p>
         </div>
         <div class="flex-1">
-            <ul class="flex items-center justify-center space-x-3">
+            <ul class="flex items-center justify-between space-x-3">
                 <li>Dashboard</li>
                 <li>My Positions</li>
                 <li>Vault</li>

@@ -1,12 +1,12 @@
 <template>
     <table class="table-fixed w-full divide-y-2 divide-[#232532] divide-opacity-70 text-left">
-        <thead class>
+        <thead class="font-neue-machina-light">
             <tr class="h-20">
                 <th>Assets</th>
                 <th>APR</th>
                 <th>Available Funds</th>
                 <th>My Supply</th>
-                <th class>Collateral</th>
+                <th>Collateral</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -29,23 +29,19 @@
                 <td>
                     <div class="flex items-center space-x-2">
                         <p>45.6%</p>
-                        <img
-                            class="bg-red-500"
-                            src="@/assets/math-symbols.png"
-                            alt="Calculation button"
-                        />
+                        <img class src="@/assets/math-symbols.png" alt="Calculation button" />
                     </div>
                 </td>
                 <td>
                     <div class>
                         <p>0.0050BTC</p>
-                        <p>$508.00</p>
+                        <p class="text-sm">$508.00</p>
                     </div>
                 </td>
                 <td>
                     <div class>
                         <p>0.0050BTC</p>
-                        <p>$508.00</p>
+                        <p class="text-sm">$508.00</p>
                     </div>
                 </td>
                 <td class>

@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex items-center justify-center space-x-2 w-40 h-12 px-3 border border-white border-opacity-25 rounded-md"
+        class="font-neue-machina-regular flex items-center justify-center space-x-2 w-40 h-12 px-3 border border-white border-opacity-25 rounded-md"
     >
         <input
             class="w-full h-full bg-transparent focus-within:outline-none"

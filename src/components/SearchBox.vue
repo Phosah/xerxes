@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex items-center space-x-2 w-96 h-12 px-3 border border-white border-opacity-25 rounded-md"
+        class="font-neue-machina-regular flex items-center space-x-2 w-96 h-12 px-3 border border-white border-opacity-25 rounded-md"
     >
         <svg
             class="w-6 h-6 text-[#6D6B6F]"

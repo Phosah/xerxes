@@ -19,6 +19,9 @@ module.exports = {
         },
       },
     },
+    fontFamily: {
+      grotesk: "'Space Grotesk', sans-serif",
+    },
   },
   plugins: [],
 };

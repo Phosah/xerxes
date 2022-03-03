@@ -4,7 +4,7 @@
         <div class="flex items-center justify-between h-full max-w-3xl mx-auto">
             <div>
                 <div class="flex items-center space-x-1 mb-1">
-                    <p>Supply Limit</p>
+                    <p class="font-neue-machina-regular">Supply balance</p>
                     <svg
                         class="w-6 h-6"
                         fill="none"
@@ -23,17 +23,17 @@
                 <p class="text-5xl font-bold">$0.00</p>
             </div>
             <div
-                class="flex items-center justify-center w-40 h-40 rounded-full border-2 border-brand-blue-2"
+                class="flex items-center justify-center z-20 w-40 h-40 rounded-full border-2 border-brand-blue-1 bg-brand-black-1"
             >
                 <div class="text-center">
-                    <p class="mb-1">Net APY</p>
+                    <p class="font-neue-machina-regular mb-1">Net APY</p>
                     <p class="text-2xl font-semibold">80%</p>
                 </div>
             </div>
 
             <div>
                 <div class="flex items-center space-x-1 mb-1">
-                    <p>Borrow Limit</p>
+                    <p class="font-neue-machina-regular">Borrow balance</p>
                     <svg
                         class="w-6 h-6"
                         fill="none"

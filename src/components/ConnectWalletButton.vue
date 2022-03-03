@@ -1,7 +1,7 @@
 <template>
     <div>
         <button
-            class="py-3 px-6 text-white border-2 border-gradient-to-r from-brand-blue-1 to-brand-blue-2 bg-gradient-to-r rounded-md"
+            class="font-neue-machina-bold py-3 px-6 text-white bg-gradient-to-r from-brand-blue-1 to-brand-blue-2 rounded-md"
         >Connect Wallet</button>
     </div>
 </template>

@@ -20,7 +20,7 @@
             </div>
         </div>
         <p>0%</p>
-        <div class="w-96 h-1 bg-white opacity-25"></div>
+        <div class="w-2/3 h-1 bg-white opacity-25"></div>
         <p>$0.00</p>
     </div>
 </template>

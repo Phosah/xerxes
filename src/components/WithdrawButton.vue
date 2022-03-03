@@ -1,6 +1,8 @@
 <template>
     <div>
-        <button class="py-3 px-6 text-white border-2 border-white rounded-md">Withdraw</button>
+        <button
+            class="font-neue-machina-bold py-3 px-6 text-white border border-white rounded-md"
+        >Withdraw</button>
     </div>
 </template>
 

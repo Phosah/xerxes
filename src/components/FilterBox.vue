@@ -1,5 +1,12 @@
 <template>
-    <div class="flex items-center space-x-2 w-40 h-12 px-3 bg-red-50 rounded-md">
+    <div
+        class="flex items-center justify-center space-x-2 w-40 h-12 px-3 border border-white border-opacity-25 rounded-md"
+    >
+        <input
+            class="w-full h-full bg-transparent focus-within:outline-none"
+            type="text"
+            placeholder="Filter"
+        />
         <svg
             width="18"
             height="18"
@@ -12,11 +19,6 @@
                 fill="#6D6B6F"
             />
         </svg>
-        <input
-            class="w-full h-full bg-transparent focus-within:outline-none"
-            type="text"
-            placeholder="Filter"
-        />
     </div>
 </template>
 

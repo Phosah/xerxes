@@ -1,7 +1,7 @@
 <template>
-    <nav class="flex items-center space-x-4">
-        <div class="flex items-center space-x-2">
-            <img src alt />
+    <nav class="flex items-center space-x-4 h-20">
+        <div class="flex-1 flex items-center space-x-2">
+            <img src="@/assets/xerxes-logo.png" alt="Xerxes logo" />
             <p>XERXES</p>
         </div>
         <div class="flex-1">
@@ -12,17 +12,18 @@
                 <li>Analytics</li>
             </ul>
         </div>
-        <div class="flex items-center space-x-3">
-            <select name id>
+        <div class="flex-1 flex items-center justify-end space-x-3">
+            <select name id class="bg-transparent">
                 <option value>ENG</option>
             </select>
             <div>
-                <button>Connect Wallet</button>
+                <ConnectWalletButton />
             </div>
         </div>
     </nav>
 </template>
 
 <script setup>
+import ConnectWalletButton from '../ConnectWalletButton.vue';
 
 </script>

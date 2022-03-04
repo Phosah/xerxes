@@ -17,7 +17,7 @@
             </td>
             <td>
                 <div class="flex items-center space-x-2">
-                    <p>{{ market.apr }}</p>
+                    <p>{{ market.apr }}%</p>
                     <img class src="@/assets/math-symbols.png" alt="Calculation button" />
                 </div>
             </td>

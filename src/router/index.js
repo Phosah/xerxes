@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
+import ConnectWallet from "../views/ConnectWallet.vue";
+import Account from "../views/Account.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +10,16 @@ const router = createRouter({
       path: "/home",
       name: "home",
       component: Home,
+    },
+    {
+      path: "/connectwallet",
+      name: "Connect Wallet",
+      component: ConnectWallet,
+    },
+    {
+      path: "/account",
+      name: "Account",
+      component: Account,
     },
     {
       // path: '/about',

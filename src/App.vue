@@ -1,5 +1,5 @@
 <template>
-  <div class="font-grotesk h-full bg-brand-black-2 text-white">
+  <div class="font-grotesk h-full">
     <div class="flex flex-col h-full max-w-7xl mx-auto">
       <header>
         <Navbar />

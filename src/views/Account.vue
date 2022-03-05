@@ -60,6 +60,24 @@
                     <Network :network="network" />
                 </div>
             </div>
+            <div class="flex items-center justify-between py-6">
+                <div class="flex items-center space-x-10">
+                    <div class="flex items-center space-x-2">
+                        <img src="@/assets/history.png" alt="History" />
+                        <p>History</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="@/assets/wallet.png" alt="Wallet" />
+                        <p>Wallet</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div>
+                        <img src="@/assets/disconnect.png" alt="Disconnect" />
+                    </div>
+                    <p>Disconnect</p>
+                </div>
+            </div>
         </div>
     </div>
 </template>

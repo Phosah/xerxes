@@ -16,7 +16,10 @@
         <FilterBox />
       </div>
     </div>
-    <table class="table-fixed w-full divide-y-2 divide-[#232532] divide-opacity-70 text-left">
+    <table
+      v-if="supply"
+      class="table-fixed w-full divide-y-2 divide-[#232532] divide-opacity-70 text-left"
+    >
       <thead class="font-neue-machina-light">
         <tr class="h-20">
           <th>Assets</th>
@@ -27,7 +30,22 @@
           <th>Actions</th>
         </tr>
       </thead>
-      <AllMarketsTable v-for="(market, ix) in marketArray" :key="ix" :market="market" />
+      <AllMarketsTableSupply v-for="(market, ix) in supplyMarketArray" :key="ix" :market="market" />
+    </table>
+    <table
+      v-if="borrow"
+      class="table-fixed w-full divide-y-2 divide-[#232532] divide-opacity-70 text-left"
+    >
+      <thead class="font-neue-machina-light">
+        <tr class="h-20">
+          <th>Assets</th>
+          <th>APY</th>
+          <th>Liquidity</th>
+          <th>My Borrow</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <AllMarketsTableBorrow v-for="(market, ix) in borrowMarketArray" :key="ix" :market="market" />
     </table>
   </main>
 </template>
@@ -37,7 +55,8 @@ import SupplyBorrowMarketButton from "@/components/SupplyBorrowMarketButton.vue"
 import SearchBox from "../components/SearchBox.vue"
 import FilterBox from "../components/FilterBox.vue"
 import ConnectWalletButton from "../components/ConnectWalletButton.vue"
-import AllMarketsTable from "../components/AllMarketsTable.vue"
+import AllMarketsTableSupply from "../components/AllMarketsTableSupply.vue"
+import AllMarketsTableBorrow from "../components/AllMarketsTableBorrow.vue"
 import MarketAndSupplyTab from "../components/MarketAndSupplyTab.vue"
 import BorrowLimit from "../components/BorrowLimit.vue"
 import Header from "../components/Header.vue"
@@ -47,7 +66,8 @@ import shiba from "@/assets/shiba-logo.png"
 import rose from "@/assets/rose-logo.png"
 import doge from "@/assets/doge-logo.png"
 
-const marketArray = ref([
+const borrow = true
+const supplyMarketArray = ref([
   {
     asset: "Bitcoin",
     img: btc,
@@ -87,6 +107,44 @@ const marketArray = ref([
     fundsUSD: 980.00,
     supplyCrypto: "0.1233 DOGE",
     supplyUSD: 550.80
+  },
+])
+const borrowMarketArray = ref([
+  {
+    asset: "Bitcoin",
+    img: btc,
+    assetPercentage: 22,
+    apy: 45.6,
+    liquidity: "$789.98M",
+    borrowCrypto: "0.1233 BTC",
+    borrowUSD: 550.80
+  },
+  {
+    asset: "Shiba Inu",
+    img: shiba,
+    assetPercentage: 22,
+    apy: 45.6,
+    liquidity: "$789.98M",
+    borrowCrypto: "0.1233 SINU",
+    borrowUSD: 550.80
+  },
+  {
+    asset: "Rose",
+    img: rose,
+    assetPercentage: 22,
+    apy: 45.6,
+    liquidity: "$789.98M",
+    borrowCrypto: "0.1233 ROSE",
+    borrowUSD: 550.80
+  },
+  {
+    asset: "Doge",
+    img: doge,
+    assetPercentage: 22,
+    apy: 45.6,
+    liquidity: "$789.98M",
+    borrowCrypto: "0.1233 DOGE",
+    borrowUSD: 550.80
   },
 ])
 </script>

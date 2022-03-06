@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="flex space-x-8">
-            <div class="w-7/12 p-8 bg-[#211E23] rounded-md">
+            <div v-if="borrow" class="w-7/12 p-8 bg-[#211E23] rounded-md">
                 <div class="flex items-center space-x-10 mb-8">
                     <div class="px-8 py-2 rounded-full bg-[#2F2B32]">Borrow</div>
                     <div>Repay</div>
@@ -124,10 +124,13 @@
                     <button class="w-full p-4 bg-brand-blue-1 rounded-md">Deposit & Borrow</button>
                 </div>
             </div>
+            <div v-if="repay" class="w-7/12 p-8 bg-[#211E23] rounded-md">
+                <Repay />
+            </div>
             <div class="w-5/12">
                 <div class="grid grid-cols-2 gap-x-4 gap-y-6">
                     <TotalApy />
-                    <AvailableLiquidity />
+                    <BorrowedAmount />
                 </div>
                 <div class="mt-8">
                     <BorrowMarketInfo />
@@ -138,9 +141,14 @@
 </template>
 
 <script setup>
+import { ref } from "vue"
 import SupplyBorrowMarketButton from "./SupplyBorrowMarketButton.vue";
 import Collateral from "./Collateral.vue";
 import TotalApy from "./TotalApy.vue";
 import AvailableLiquidity from "./AvailableLiquidity.vue";
 import BorrowMarketInfo from "./BorrowMarketInfo.vue";
+import Repay from "./Repay.vue";
+import BorrowedAmount from "./BorrowedAmount.vue";
+
+const repay = ref(true)
 </script>>

@@ -1,6 +1,6 @@
 <template>
-    <div v-if="borrow">
-        <Borrow />
+    <div v-if="supply">
+        <Supply />
     </div>
     <div v-if="analytics">
         <Analytics />
@@ -9,9 +9,9 @@
 
 <script setup>
 import { ref } from "vue"
-import Borrow from "../components/Borrow.vue";
+import Supply from "../components/Supply.vue";
 import Analytics from "../components/Analytics.vue";
 
-const borrow = ref(true)
+const supply = ref(true)
 </script>
 

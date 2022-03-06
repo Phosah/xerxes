@@ -7,7 +7,7 @@
         />
         <div>
             <div class="flex items-center space-x-2 mb-3">
-                <p>Available Liquidity</p>
+                <p>Borrowed Amount</p>
                 <svg
                     width="15"
                     height="16"

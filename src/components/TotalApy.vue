@@ -6,7 +6,7 @@
             alt="waves"
         />
         <div class>
-            <div class="flex items-center space-x-2">
+            <div class="flex items-center space-x-2 mb-3">
                 <p>Total APY</p>
                 <svg
                     width="15"
@@ -21,7 +21,7 @@
                     />
                 </svg>
             </div>
-            <p>-19.4%</p>
+            <p class="text-3xl">-19.4%</p>
         </div>
     </div>
 </template>

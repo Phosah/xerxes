@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import ConnectWallet from "../views/ConnectWallet.vue";
 import Account from "../views/Account.vue";
 import BorrowMarket from "../views/BorrowMarket.vue";
+import SupplyMarket from "../views/SupplyMarket.vue";
 import SelectedAssets from "../views/SelectedAssets.vue";
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/borrowmarket",
       name: "Borrow Market",
       component: BorrowMarket,
+    },
+    {
+      path: "/supplymarket",
+      name: "Supply Market",
+      component: SupplyMarket,
     },
     {
       path: "/selectedassets",

@@ -7,7 +7,7 @@
         />
         <div>
             <div class="flex items-center space-x-2 mb-3">
-                <p>Available Liquidity</p>
+                <p>Asset Value</p>
                 <svg
                     width="15"
                     height="16"
@@ -21,7 +21,7 @@
                     />
                 </svg>
             </div>
-            <p class="text-3xl">$324.78M</p>
+            <p class="text-3xl">$0.0016</p>
         </div>
     </div>
 </template>

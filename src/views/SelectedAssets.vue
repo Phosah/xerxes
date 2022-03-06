@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center py-20">
-        <div class="w-full max-w-2xl mx-auto p-8 bg-brand-black-1 rounded-md">
+        <div class="w-full max-w-xl mx-auto p-8 bg-brand-black-1 rounded-md">
             <div class="mb-4 flex items-center justify-between">
                 <h4 class="mb-4 text-3xl">Select Assets</h4>
                 <svg

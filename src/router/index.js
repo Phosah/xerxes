@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import ConnectWallet from "../views/ConnectWallet.vue";
 import Account from "../views/Account.vue";
 import BorrowMarket from "../views/BorrowMarket.vue";
+import SelectedAssets from "../views/SelectedAssets.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/borrowmarket",
       name: "Borrow Market",
       component: BorrowMarket,
+    },
+    {
+      path: "/selectedassets",
+      name: "Selected Assets",
+      component: SelectedAssets,
     },
     {
       // path: '/about',

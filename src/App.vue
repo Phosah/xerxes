@@ -11,13 +11,9 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Navbar from "@/components/layout/Navbar.vue"
 
-export default {
-  name: "App",
-  components: { Navbar }
-}
 </script>
 
 <style>

@@ -1,8 +1,12 @@
 <template>
     <nav class="flex items-center space-x-4 h-24 font-grotesk">
-        <div class="flex-1 flex items-center space-x-2">
-            <img src="@/assets/xerxes-logo.png" alt="Xerxes logo" />
-            <p class="font-neue-machina-bold text-xl">XERXES</p>
+        <div class="flex-1">
+            <router-link to="/">
+                <div class="flex items-center space-x-2">
+                    <img src="@/assets/xerxes-logo.png" alt="Xerxes logo" />
+                    <p class="font-neue-machina-bold text-xl">XERXES</p>
+                </div>
+            </router-link>
         </div>
         <div class="flex-1">
             <ul class="flex items-center justify-between space-x-3">

@@ -4,9 +4,6 @@
             <div class="flex items-center space-x-2">
                 <p>Supply APY</p>
                 <img src="@/assets/info.svg" alt="Info icon" />
-                <!-- <template>
-                <IconInformation />
-                </template>-->
             </div>
             <p class>-34.8%</p>
         </div>

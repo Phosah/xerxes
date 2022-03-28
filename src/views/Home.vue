@@ -66,7 +66,7 @@ import shiba from "@/assets/shiba-logo.png"
 import rose from "@/assets/rose-logo.png"
 import doge from "@/assets/doge-logo.png"
 
-const borrow = true
+const borrow = false
 const supplyMarketArray = ref([
   {
     asset: "Bitcoin",
